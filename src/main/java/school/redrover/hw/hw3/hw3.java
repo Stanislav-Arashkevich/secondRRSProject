@@ -31,44 +31,13 @@ public class hw3 {
             }
         }
 
-        if (a / 2 > 20) {
+        if (a / 2.0 > 20) {
             System.out.println(true);
         }
         if (a >= 5 && a <= 40) {
             System.out.println(true);
         } else if (a < 5 || a > 40){
             System.out.println(false);
-        }
-
-        //------Task4-------------
-        for (int i = 0; i < 15; i++) {
-            System.out.print(i + " ");
-        }
-        System.out.println();
-
-        //------Task5-------------
-        for (int i = 1; i < 10000; i *= 5) {
-
-            if (i == 1) {
-                continue;
-            }
-
-            System.out.print(i + " ");
-        }
-        System.out.println();
-
-        //------Task6-------------
-        //v1
-        for (int i = 40; i <= 60; i+=4) {
-            System.out.print(i + " ");
-        }
-        System.out.println();
-
-        //v2
-        for (int i = 40; i <= 60; i++) {
-            if (i % 4 == 0) {
-                System.out.print(i + " ");
-            }
         }
     }
 }
