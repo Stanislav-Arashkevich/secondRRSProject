@@ -23,7 +23,7 @@ public class hw4 {
 
         //------Task3-------------
         //v1
-        for (int i = 40; i <= 60; i+=4) {
+        for (int i = 40; i <= 60; i += 4) {
             System.out.print(i + " ");
         }
         System.out.println();
