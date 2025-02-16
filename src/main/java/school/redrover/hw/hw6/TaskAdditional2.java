@@ -16,8 +16,19 @@ public class TaskAdditional2 {
             Arrays.setAll(row, column -> count.getAndIncrement());
         }
 
-        System.out.println(Arrays.deepToString(arr));
+//        System.out.println(Arrays.deepToString(arr));
 
+        //sys.out
+        for (int[] ints : arr) {
+            for (int anInt : ints) {
+                System.out.printf("%d\t", anInt);
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+
+        //replace values
         for (int y = 0; y < size; y++) {
             for (int x = 0; x < size; x++) {
 
@@ -29,7 +40,15 @@ public class TaskAdditional2 {
             }
         }
 
-        System.out.println(Arrays.deepToString(arr));
+        //sys.out
+        for (int[] ints : arr) {
+            for (int anInt : ints) {
+                System.out.printf("%d\t", anInt);
+            }
+            System.out.println();
+        }
+
+//        System.out.println(Arrays.deepToString(arr));
     }
 }
 
