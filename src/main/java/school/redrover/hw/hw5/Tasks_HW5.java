@@ -8,7 +8,7 @@ public class Tasks_HW5 {
 
         int[] arr = {9, 2, 6, 4, 5, 12, 7, 8, 6};
 
-        //----Task1----
+        //----Tasks----
         for (int j : arr) {
             if (j % 2 != 0) {
                 System.out.print(j + " ");

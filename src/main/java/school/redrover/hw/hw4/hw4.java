@@ -4,7 +4,7 @@ public class hw4 {
 
     public static void main(String[] args) {
 
-        //------Task1-------------
+        //------Tasks-------------
         for (int i = 0; i < 15; i++) {
             System.out.print(i + " ");
         }

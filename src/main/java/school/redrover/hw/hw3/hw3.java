@@ -7,7 +7,7 @@ public class hw3 {
         int a  = 524;
         int b = 27;
 
-        //------Task1-------------
+        //------Tasks-------------
         if (a == b) {
             System.out.println("a == b");
         } else if (a > b) {
