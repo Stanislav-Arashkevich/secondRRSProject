@@ -40,7 +40,7 @@ public class Manager {
             if (month.getNameOfMonth().equals(monthName)) {
                 monthSalary = month.getWorkDays() * getDaySalary() + (numOfSubordinates * 0.01);
             } else {
-                System.out.println("В этом месяце денег нет, может потом будут))");
+                System.out.println("No hands? No sweet treats!");
             }
         }
 

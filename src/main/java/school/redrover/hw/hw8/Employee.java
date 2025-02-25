@@ -44,7 +44,7 @@ public class Employee {
             if (month.getNameOfMonth().equals(monthName)) {
                 monthSalary = month.getWorkDays() * getDaySalary();
             } else {
-                System.out.println("В этом месяце денег нет, может потом будут))");
+                System.out.println("No hands? No sweet treats!");
             }
         }
 
