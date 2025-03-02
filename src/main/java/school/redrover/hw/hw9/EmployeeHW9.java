@@ -22,30 +22,6 @@ public class EmployeeHW9 {
         return new EmployeeHW9(empName, 0, "Unknown", dailySalary);
     }
 
-    public void setEmpAge(int empAge) {
-        this.empAge = empAge;
-    }
-
-    public void setEmpSex(String empSex) {
-        this.empSex = empSex;
-    }
-
-    public String getEmpName() {
-        return empName;
-    }
-
-    public int getEmpAge() {
-        return empAge;
-    }
-
-    public String getEmpSex() {
-        return empSex;
-    }
-
-    public double getDailySalary() {
-        return dailySalary;
-    }
-
     public double getSalary(MonthHW9[] months) {
 
         double total = 0;
@@ -83,5 +59,29 @@ public class EmployeeHW9 {
                 this.getDailySalary(),
                 numberOfSubordinates
         );
+    }
+
+    public void setEmpAge(int empAge) {
+        this.empAge = empAge;
+    }
+
+    public void setEmpSex(String empSex) {
+        this.empSex = empSex;
+    }
+
+    public String getEmpName() {
+        return empName;
+    }
+
+    public int getEmpAge() {
+        return empAge;
+    }
+
+    public String getEmpSex() {
+        return empSex;
+    }
+
+    public double getDailySalary() {
+        return dailySalary;
     }
 }
