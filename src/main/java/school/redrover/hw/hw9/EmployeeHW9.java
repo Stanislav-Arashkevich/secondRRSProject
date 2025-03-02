@@ -7,7 +7,7 @@ public class EmployeeHW9 {
     private String empSex;
     private final double dailySalary;
 
-    public EmployeeHW9(String empName, int dailySalary){
+    public EmployeeHW9(String empName, double dailySalary){
         this(empName, 0, "unknown", dailySalary);
     }
 
@@ -46,6 +46,17 @@ public class EmployeeHW9 {
         return dailySalary;
     }
 
+    public double getSalary(MonthHW9[] months) {
+
+        double total = 0;
+
+        for (MonthHW9 month : months) {
+            total += dailySalary * month.getWorkDays();
+        }
+
+        return total;
+    }
+
     public double getSalary(MonthHW9[] monthsArr, String monthName) {
 
         double monthSalary = 0;
@@ -69,8 +80,6 @@ public class EmployeeHW9 {
 
         return new ManagerHW9(
                 this.getEmpName(),
-                this.getEmpAge(),
-                this.getEmpSex(),
                 this.getDailySalary(),
                 numberOfSubordinates
         );

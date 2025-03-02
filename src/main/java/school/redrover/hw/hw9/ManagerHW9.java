@@ -4,6 +4,13 @@ public class ManagerHW9 extends EmployeeHW9 {
 
     private final int numOfSubordinates;
 
+    public ManagerHW9(String managerName, double dailySalary, int numOfSubordinates){
+        super(managerName, dailySalary);
+        super.setEmpAge(0);
+        super.setEmpSex("Unknown");
+        this.numOfSubordinates = numOfSubordinates;
+    }
+
     public ManagerHW9(String managerName, int managerAge, String managerSex, double daySalary, int numOfSubordinates) {
         super( managerName, managerAge, managerSex, daySalary);
         this.numOfSubordinates = numOfSubordinates;

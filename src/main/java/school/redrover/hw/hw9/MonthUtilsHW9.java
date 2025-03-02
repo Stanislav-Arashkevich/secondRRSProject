@@ -2,7 +2,7 @@ package school.redrover.hw.hw9;
 
 public class MonthUtilsHW9 {
 
-    MonthHW9[] months = {
+    public static final MonthHW9[] months = {
             new MonthHW9("Jan", 31, 17),
             new MonthHW9("Feb", 28, 20),
             new MonthHW9("Mar", 31, 21),
