@@ -2,7 +2,7 @@ package school.redrover.hw.hw8;
 
 public class MonthUtils {
 
-    Month[] months = {
+    public static final Month[] MONTHS = {
             new Month("Jan", 31, 17),
             new Month("Feb", 28, 20),
             new Month("Mar", 31, 21),
@@ -19,7 +19,7 @@ public class MonthUtils {
 
     public Month getMonths(String name) {
 
-        for (Month month : months) {
+        for (Month month : MONTHS) {
             if (month.getNameOfMonth().equals(name)) {
                 return month;
             }

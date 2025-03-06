@@ -24,7 +24,7 @@ public class HW8Test {
         for (Employee employee1 : employee) {
 
             System.out.printf("Monthly salary for %s for %s = %.2f%n", employee1.getEmpName(), monthName,
-                    employee1.getSalary(new Month[]{month.getMonths(monthName)}, monthName));
+                    employee1.getSalaryForMonthName(new Month[]{month.getMonths(monthName)}, monthName));
         }
 
         Manager manager = new Manager("Peter", 36, "Male", 350, 3);

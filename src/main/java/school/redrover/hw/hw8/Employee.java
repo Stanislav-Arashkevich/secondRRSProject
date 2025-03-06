@@ -36,18 +36,34 @@ public class Employee {
         return daySalary;
     }
 
-    public double getSalary(Month[] monthsArr, String monthName) {
+    public double getSalaryForMonthName(Month[] monthsArr, String monthName) {
 
         double monthSalary = 0;
 
         for (Month month : monthsArr) {
             if (month.getNameOfMonth().equals(monthName)) {
-                monthSalary = month.getWorkDays() * getDaySalary();
+                monthSalary = getMonthlySalary(month);
             } else {
                 System.out.println("No hands? No candy stands!");
             }
         }
 
         return monthSalary;
+    }
+
+    public double getSalary(Month[] months) {
+        return getBaseSalary(months);
+    }
+
+    public double getBaseSalary(Month[] months) {
+        double salary = 0;
+        for (Month month : months) {
+            salary = getMonthlySalary(month);
+        }
+        return salary;
+    }
+
+    public double getMonthlySalary(Month month) {
+        return month.getWorkDays() * getDaySalary();
     }
 }
