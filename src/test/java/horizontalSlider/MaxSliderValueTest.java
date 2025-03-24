@@ -25,7 +25,7 @@ public class MaxSliderValueTest {
     private WebDriverWait wait5;
     private WebDriverWait wait10;
 
-    protected Actions getJSExecutor() {
+    protected Actions getActions() {
         if (actions == null) {
             return new Actions(getDriver());
         }
@@ -64,6 +64,7 @@ public class MaxSliderValueTest {
         if (driver != null) {
             driver.quit();
             driver = null;
+            actions = null;
             wait5 = null;
             wait10 = null;
 
