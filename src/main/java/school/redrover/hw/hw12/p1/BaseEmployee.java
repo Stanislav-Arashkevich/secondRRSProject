@@ -70,4 +70,20 @@ protected double getBaseSalary(MonthHW12[] months) {
             .sum();
 }
 
+    protected double getSalaryForOneMonth(MonthHW12[] monthsArr, String monthName) {
+        try {
+            for (MonthHW12 month : monthsArr) {
+                if (month.getNameOfMonth().equals(monthName)) {
+                    return getBaseSalary(new MonthHW12[]{month});
+                }
+            }
+        } catch (IllegalArgumentException e) {
+            System.out.println("No such month: " + monthName);
+        }
+
+//        System.out.println("No hands? No candy stands!");
+
+        return 0;
+        }
+    }
  */

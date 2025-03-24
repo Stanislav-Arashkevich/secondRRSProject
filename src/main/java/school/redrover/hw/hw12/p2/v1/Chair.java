@@ -18,6 +18,11 @@ public final class Chair extends FurnitureForSitting {
     }
 
     @Override
+    public int getSeatingCapacity() {
+        return 1;
+    }
+
+    @Override
     protected void howToUse() {
 
         if (hasBackrest) {
